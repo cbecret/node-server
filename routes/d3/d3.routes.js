@@ -15,7 +15,10 @@ class D3RouterClass {
   routes() {
     //= > Api Routes
     d3Router.get('/', (req, res) => {
-      res.json({ msg: "Hello API" });
+      res.json({ msg: "Hello API !" });
+    });
+    d3Router.post('/', (req, res) => {
+      res.json({ msg: "Post data", req: req.body });
     });
   }
 

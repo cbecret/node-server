@@ -7,13 +7,36 @@
     <title>Server exercice for JavaScript lesson - 22 january 2019</title>
     <meta name="description" content="Server exercice for JavaScript lesson - 22 january 2019">
     <meta name="author" content="Cyril Bécret">
-
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    <link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
     <link rel="stylesheet" href="./css/styles.css">
 
 </head>
 
 <body>
-    <h1>Server exercice for JavaScript lesson - 22 january 2019</h1>
+    <header>
+        <h1>NodeJS file converter</h1>
+    </header>
+
+    <main>
+        <section id="formConverter">
+            <form action="">
+                <label>Add your CSV</label>
+                <textarea name="rawData" id="rawData"></textarea>
+                <button type="submit">Convert to JSON</button>
+            </form>
+        </section>
+
+        <section id="fromSaver" class="hidden">
+            <form action="">
+                <label>Your data in JSON</label>
+                <textarea name="jsonData" disabled></textarea>
+                <button type="submit">Save in BDD</button>
+            </form>
+        </section>
+
+    </main>
     <script src="./js/app.js"></script>
 </body>
 </html>
