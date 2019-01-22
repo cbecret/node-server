@@ -1,0 +1,31 @@
+{
+  "name": "dataServer",
+  "version": "1.0.0",
+  "description": "Server exercice for JavaScript lesson - 22 january 2019",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "keywords": [
+    "Data",
+    "Server",
+    "Exercice"
+  ],
+  "author": "Cyril Bécret",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "d3": "^5.7.0",
+    "dotenv": "^6.2.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "eslint": "^5.12.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "nodemon": "^1.18.9"
+  }
+}
