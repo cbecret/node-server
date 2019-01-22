@@ -15,7 +15,7 @@ class D3RouterClass {
   routes() {
     //= > Api Routes
     d3Router.get('/', (req, res) => {
-      res.json({ msg: "Hello API" });
+      res.render('d3');
     });
   }
 
