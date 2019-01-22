@@ -11,7 +11,7 @@ const bodyParser = require('body-parser');
 
 //= > Inner
 const FrontRouterClass = require('./routes/front/front.routes');
-const ApiRouterClass = require('./routes/api/api.routes');
+const D3RouterClass = require('./routes/d3/d3.routes');
 //
 
 /*
@@ -37,9 +37,9 @@ class ServerClass {
 
     //= > Routers
     const frontRouter = new FrontRouterClass();
+    const d3Router = new D3RouterClass();
     server.use('/', frontRouter.init());
-    const apiRouter = new ApiRouterClass();
-    server.use('/api', apiRouter.init());
+    server.use('/api/d3', d3Router.init());
 
     //= > Start server
     this.launch();

@@ -3,25 +3,25 @@ Import & config
 */
 const express = require('express');
 
-const apiRouter = express.Router();
+const d3Router = express.Router();
 //
 
 /*
 Définition
 */
-class ApiRouterClass {
+class D3RouterClass {
   constructor() {}
 
   routes() {
     //= > Api Routes
-    apiRouter.get('/d3', (req, res) => {
+    d3Router.get('/', (req, res) => {
       res.render('d3');
     });
   }
 
   init() {
     this.routes();
-    return apiRouter;
+    return d3Router;
   }
 }
 //
@@ -29,5 +29,5 @@ class ApiRouterClass {
 /*
 Export
 */
-module.exports = ApiRouterClass;
+module.exports = D3RouterClass;
 //
